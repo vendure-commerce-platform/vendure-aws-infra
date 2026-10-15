@@ -24,3 +24,8 @@ variable "vpc_cidr" {
   type        = string
   default     = "10.20.0.0/16"
 }
+
+variable "admin_cidr" {
+  description = "CIDR allowed to reach SSH (22) and the Kubernetes API (6443), e.g. 203.0.113.10/32"
+  type        = string
+}
